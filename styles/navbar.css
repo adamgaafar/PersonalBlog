@@ -1,0 +1,77 @@
+/* General Navbar Styles */
+.homepageNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 5%;  /* Adjust padding */
+    background: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.homepageNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 25px 0 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.homepageNav a {
+    color: rgb(159, 157, 157);
+    text-decoration: none;
+    flex-shrink: 1;  /* Allows links to shrink if needed */
+}
+
+.homepageNav a:hover {
+    color: rgb(247, 247, 247);
+}
+
+.logo {
+    font-size: 32px;
+    color: #0091dc;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .homepageNav {
+        padding: 10px 2%;  /* Reduce padding to free up space */
+    }
+
+    .homepageNav ul {
+        gap: 10px;  /* Reduce gap between items */
+        justify-content: space-around; /* Spread items more evenly */
+    }
+
+    .homepageNav a {
+        font-size: 16px;  /* Adjust font size to fit better */
+        padding: 5px;  /* Reduce padding for more space */
+    }
+
+    .logo {
+        font-size: 28px;  /* Reduce logo size to create space */
+    }
+}
+
+@media (max-width: 480px) {
+    .homepageNav ul {
+        justify-content: center;
+        gap: 1px;  /* Further reduce the gap */
+    }
+
+    .homepageNav a {
+        font-size: 14px;  /* Make text smaller for small screens */
+        padding: 4px;  /* Smaller padding to make items fit */
+    }
+
+    .logo {
+        font-size: 24px;  /* Small logo on tiny screens */
+    }
+}

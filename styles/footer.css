@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(25, 25, 25);
+    color: #d1d5db;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
